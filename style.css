@@ -12,6 +12,9 @@ h1{
     text-align: center;
     white-space: pre; 
 }
+.container label{
+    font-size: x-large;
+}
 input{
   margin:0.5rem 0rem;
   border-radius: 20px;
