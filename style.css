@@ -1,4 +1,8 @@
-
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
 body{
     background-color: black;
     color:white
@@ -12,6 +16,7 @@ h1{
 .container{
     text-align: center;
     white-space: pre; 
+    
 }
 .container label{
     font-size: large;
@@ -30,13 +35,26 @@ input:focus{
 
 .btn{
     padding:0.8rem 3rem;
-    margin:2rem 0rem;
+    margin:0.5rem 0rem;
     cursor:pointer;
     background: rgb(247, 4, 166);
     border-radius: 2rem;
     font-size: large;
    
 }
+.reset{
+      text-decoration: none;
+    padding:0.5rem 1rem;
+    color:black;
+    background-color: rgb(247, 4, 166);
+    border-radius: 20px;
+    font-size: large;
+    margin-top: 0.8rem;
+
+    
+    
+}
+
 
 #error-msg{
     display: none;
@@ -55,18 +73,11 @@ table, th, td {
   }
   .cash{
       display: none;
+      margin-top: 0;
+      padding-top:0;
   }
   
-  .reset{
-      
-      text-decoration: none;
-      padding:0.5rem 1rem;
-      color:black;
-      background-color: rgb(247, 4, 166);
-      border-radius: 20px;
-      font-size: large;
-      
-  }
+  
   .btn:hover{
    
     font-weight: bold;
@@ -76,7 +87,8 @@ table, th, td {
     font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
-    h3{
-        
-    }
+   .container{
+    overflow-wrap: break-word;
+    width:100% !important;
+   }
   }
