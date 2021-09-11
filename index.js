@@ -29,7 +29,7 @@ calButton.addEventListener("click",function validateBillandCash(){
             calculateChange(amountToBeReturned);
         }
         else{
-            errorBlock("Do you wanna wash Plates 😂😂");
+            errorBlock("Do you wanna wash Plates? 😂😂");
         }
 
     }

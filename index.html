@@ -12,13 +12,16 @@
 <body>
     <h1>Cash Register App</h1>
     <div class="container">
+        <h3>Avaliable Currencies:  ₹2000, ₹500, ₹100, ₹20, ₹10, ₹5, ₹2, ₹1 </h3>
         <label for="billAmt">Bill Amount</label>
-        <input type="text" id="billAmt" placeholder="Enter bill amount">
+        <input type="number" id="billAmt" placeholder="Enter bill amount">
         <button class="btn" id="showWhenBillentered">Enter Cash</button>
         <div class="cash" >
             <label for="cashGiven">Cash Given</label>
-            <input class="cashGivenInput" type="text" id="cashGiven" placeholder="Enter Cash Given">
-            <button class="btn" id="btn-calculate">Calculate</button>
+            <input class="cashGivenInput" type="number" id="cashGiven" placeholder="Enter Cash Given">
+            <button class="btn" id="btn-calculate" >Calculate</button>
+            <a href="index.html" class="reset" >Reset</a>
+          
         </div>
         <p id="error-msg"></p>
     </div>

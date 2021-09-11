@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
     color:white
@@ -14,6 +15,7 @@ h1{
 }
 .container label{
     font-size: large;
+   
 }
 input{
   margin:0.5rem 0rem;
@@ -22,9 +24,7 @@ input{
   width:30%;
  
 }
-.cashGivenInput{
-    /* display: none; */
-}
+
 .btn{
     padding:0.8rem 3rem;
     margin:2rem 0rem;
@@ -32,12 +32,9 @@ input{
     background: rgb(247, 4, 166);
     border-radius: 2rem;
     font-size: large;
-    
-}
-.btn:hover{
    
-    font-weight: bold;
 }
+
 #error-msg{
     display: none;
 }
@@ -56,3 +53,22 @@ table, th, td {
   .cash{
       display: none;
   }
+  
+  .reset{
+      
+      text-decoration: none;
+      padding:0.5rem 1rem;
+      color:black;
+      background-color: rgb(247, 4, 166);
+      border-radius: 20px;
+      font-size: large;
+      
+  }
+  .btn:hover{
+   
+    font-weight: bold;
+}
+  .reset:hover{
+   
+    font-weight: bold;
+}
