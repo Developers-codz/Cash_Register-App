@@ -12,15 +12,16 @@ const noOfNote=document.querySelectorAll(".returned-note");
 
 const availableNotes=[2000,500,100,20,10,5,2,1];
 
-showWhenBillentered.addEventListener("click" , function checkIfBillEntered(){
+showWhenBillentered.addEventListener("click" , function checkIfBillEntered(event){
+    event.preventDefault();
     if(bill_amt.value){
         showWhenBillentered.style.display="none";
         cash.style.display="block";
-        bill_amt.disabled=true;
-        bill_amt.style.color='white';
+        
     }
 })
-calButton.addEventListener("click",function validateBillandCash(){
+calButton.addEventListener("click",function validateBillandCash(event){
+    event.preventDefault();
     // console.log(bill_amt.value);
     // console.log(cash_given.value);
     if(bill_amt.value>=0){
