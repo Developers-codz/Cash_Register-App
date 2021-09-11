@@ -24,6 +24,9 @@ input{
   width:30%;
  
 }
+input:focus{
+    outline: none;
+}
 
 .btn{
     padding:0.8rem 3rem;
@@ -72,3 +75,8 @@ table, th, td {
    
     font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+    h3{
+        
+    }
+  }

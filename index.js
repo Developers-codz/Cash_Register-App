@@ -16,6 +16,8 @@ showWhenBillentered.addEventListener("click" , function checkIfBillEntered(){
     if(bill_amt.value){
         showWhenBillentered.style.display="none";
         cash.style.display="block";
+        bill_amt.disabled=true;
+        bill_amt.style.color='white';
     }
 })
 calButton.addEventListener("click",function validateBillandCash(){
