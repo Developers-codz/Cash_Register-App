@@ -88,11 +88,15 @@ table, th, td {
     font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
-   .container{
-    overflow-wrap: break-word;
-    width:100% !important;
-   }
+   
    input{
        width:50%;
+      
+       
+   }
+   .container{
+       margin: 0px auto;
+       text-align: center !important;
+       margin-right:50px ;
    }
   }
