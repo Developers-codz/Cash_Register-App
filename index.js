@@ -16,7 +16,7 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 2, 1];
 
 showWhenBillentered.addEventListener("click", function checkIfBillEntered(event) {
     event.preventDefault();
-    if (bill_amt.value) {
+    if (parseInt(bill_amt.value)){
         showWhenBillentered.style.display = "none";
         cash.style.display = "block";
 
@@ -26,9 +26,9 @@ calButton.addEventListener("click", function validateBillandCash(event) {
     event.preventDefault();
     // console.log(bill_amt.value);
     // console.log(cash_given.value);
-    if (bill_amt.value >= 0) {
+    if (parseInt(bill_amt.value) >= 0) {
 
-        if (cash_given.value >= bill_amt.value) {
+        if (parseInt(cash_given.value) >= parseInt(bill_amt.value)) {
             hidemsg();
             const amountToBeReturned = cash_given.value - bill_amt.value;
                 if(amountToBeReturned<0){
